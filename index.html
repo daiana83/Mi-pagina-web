@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>parcial-pensamiento-matematico</title>
+    <link rel="stylesheet" href="styles.css">
+    </head>
+<body>
+    <header>
+<h1><strong>RESUMEN DEL PARCIAL</strong></h1>
+<p id="subtitulo">Bienvenidos, en esta pagina estaremos viendo los temas estuvimos abordamos en este parcial</p>
+
+    </header>
+    <main>
+        <section id="Actividad1">
+            <h2>Cancion y papelote en equipo</h2>
+            <p>en esta actividad hicimos en equipo una cancion que nos describiera a cada uno de los integrantes del equipo y luego escribirla en un papelote y tambien agregar una foto, tambien un nombre que nos identificara para los integrantes y ese seria nuestro titulo.</p>
+            <img src="c:\Users\Lenovo\Desktop\Daiana\Imagen de WhatsApp 2025-09-24 a las 23.01.30_7a35206d.jpg" alt="cancion">
+            <p id="letra"><strong> Los tralaleritos:</strong>
+Pepe, Borre, Itzel y Daiana,
+pura desvelada y tarea no acaba,
+con un tumbadito la risa se enciende,
+cuatro compas locos que nadie detiene.
+Pepe en la bola, siempre anda ruidoso,
+si no hace un meme, ya se siente ocioso,
+le dicen “payaso”, pero no se agüita,
+trae la diversión como mochilita.
+Daiana se ríe hasta sin razón,
+cuenta un chiste malo y hace el vacilón,
+siempre se tropieza, casi tradición,
+pero todos saben que es la sensación.
+
+Borre anda al cien, tirando carrilla,
+de repente sabio, y luego cosquillas,
+pone cara seria, pero no se aguanta,
+suelta la risa y la fiesta levanta.
+
+Itzel bien coqueta, pero buena onda,
+trae la energía que nunca se esconde,
+si suelta carcajada ya nadie se aguanta,
+con su vibra loca la fiesta se levanta.</p>
+<p><center> ESE FUE NUESTRA LETRA DE LA CANCION.</p></center>
+        </section>
+
+        <section id="Actividad2">
+            <h2>Triptico de metodo cientifico</h2>
+          <p >Elaboramos un triptico que explique de manera visual y sencilla las etapas o pasos del metodo cientifico que seria por ejemplo observaciones, hipotesis,experimentacion, analisis y conclusion, <strong>a continuacion te dejare un video explicandolo mas detalladamente</strong></p>
+          <center><iframe width="560" height="315" src="https://www.youtube.com/embed/GekSSZmsRXQ?si=8cZ1hSZEtdZcRq-q" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe> </center>
+        </section>
+
+        <section id="Actividad3">
+            <h2>Sube y baja</h2>
+            <p >fue una practica donde grabamos un video donde los integrantes del equipo muestran el funcionamiento de un sube y baja para representar principios fisicos con el equilibrio y la palanca. <strong>Aqui te dejamos un ejemplo sobre nuestra practica:</strong></p>
+       <center><img src="c:\Users\Lenovo\Desktop\Daiana\diagrama explicativo.png" alt="sube y baja"></center>
+        <p > Esta ilustración muestra cómo el sube y baja utiliza un punto de apoyo central (llamado fulcro) para equilibrar las fuerzas aplicadas por los niños en cada extremo. Cuando uno ejerce fuerza hacia abajo, el otro sube gracias al efecto de palanca. En este caso nosotros realizamos la practica con monedas, una regla y un borrador y ya despues pusimos lo pusimos en practica nosotros mismos</p>
+        </section>
+
+         <section id="Actividad4">
+            <h2>Maquinas simples</h2>
+          <p >En esta actividad vimos lo que son las maquinas sirves y cual es su funcion y ejemplos de ellas, las maquinas simples son herramientas que nos ayudan a realizar trabajos con menos esfuerzo. <strong>Ejemplos:</strong></p>
+       <center><img src="https://imgv2-2-f.scribdassets.com/img/document/645066225/original/a46ca7a3cc/1695588331?v=1" alt="maquinas simples"></center>
+       
+       
+       
+       
+        </section>
+
+         <section id="Actividad5">
+            <h2>Cambiar llanta</h2>
+          <p >Finalmete nosotros mismos realizamos la actividad de cambiar una llanta, donde vimos los pasos a seguir y las herramientas que se necesitan para realizarlo</p>
+          <p>Cambiar una llanta es un excelente ejemplo de cómo usamos máquinas simples en la vida diaria. Al aflojar las tuercas con una llave, aplicamos el principio de la palanca para multiplicar nuestra fuerza. Las tuercas mismas funcionan como tornillos, convirtiendo el giro en sujeción. Si usamos una rampa para elevar el coche, estamos empleando un plano inclinado, y la llanta que reemplazamos representa la máquina simple de rueda y eje. Esta tarea cotidiana demuestra cómo las máquinas simples nos ayudan a realizar trabajos con menos esfuerzo.</p>
+      <img src="https://cdn.memegenerator.es/imagenes/memes/full/32/7/32079700.jpg" alt="cambiar llanta">
+        </section>
+<!-- Botón flotante -->
+<button id="toggleFooter" class="toggle-btn">▲</button>
+
+<footer id="integrantes" class="footer">
+  <h2>NOMBRE DE INTEGRANTES:</h2>
+  <p>Daiana Daeli Rosas Serratos, Itzel Gaspar Muñoz, Jose de Jesus Zavala Oliva, Cesas Emir Medina Martinez</p>
+</footer>
+<script>
+  const toggleBtn = document.getElementById("toggleFooter");
+  const footer = document.getElementById("integrantes");
+  let lastScroll = window.scrollY; // posición inicial del scroll
+
+  // Botón manual (abrir/cerrar)
+  toggleBtn.addEventListener("click", () => {
+    footer.classList.toggle("active");
+
+    if (footer.classList.contains("active")) {
+      toggleBtn.textContent = "▼";
+    } else {
+      toggleBtn.textContent = "▲";
+    }
+  });
+
+  // Mostrar/ocultar footer con el scroll
+  window.addEventListener("scroll", () => {
+    let currentScroll = window.scrollY;
+
+    if (currentScroll < lastScroll) {
+      // Scroll hacia arriba → mostrar footer
+      footer.classList.add("active");
+      toggleBtn.textContent = "▼";
+    } else {
+      // Scroll hacia abajo → ocultar footer
+      footer.classList.remove("active");
+      toggleBtn.textContent = "▲";
+    }
+
+    lastScroll = currentScroll;
+  });
+</script>
+
+
+    </main>
+        
+
+    </body>
+</html>
